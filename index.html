@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<title>IEG</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/jquery-1.8.0.min.js"></script>
+	<script src="js/common.js"></script>
+	<!--[if lt IE 9]> <script src="js/html5.js"></script> <![endif]-->
 </head>
 <body>
 
@@ -14,8 +17,10 @@
 	<div class="header__holder">
 		<div class="header__top">
 			<div class="lang">
-				<span>EN</span>
-				<div class="arr_down"></div>
+				<div class="lang__active">
+					<span>EN</span>
+					<div class="arr_down"></div>
+				</div>
 				<div class="lang__drop">
 					<ul>
 						<li><a href="#">DE</a></li>
@@ -85,8 +90,10 @@
 			</div>
 			<div class="text-block_shadow"><div class="text-block__holder">
 				<h1 class="h1_mark">Latest Transactions</h1>
-				<img src="img/img-01.jpg" alt="">
-				<img src="img/img-01.jpg" alt="">
+				<ul class="trans-list">
+					<li><img src="img/img-01.jpg" alt=""></li>
+					<li><img src="img/img-01.jpg" alt=""></li>
+				</ul>
 				<a href="#"  class="link-more">All Transactions</a>
 			</div></div>
 		</div>
@@ -97,6 +104,31 @@
 					<li><h1 class="h1_mark">Events</h1></li>
 				</ul>
 				<div class="tabs__content">
+					<div class="tabs__box" style="display:block;">
+						<div class="article__list">
+							<div class="article__item">
+								<strong class="article__date">02.10.2012</strong>
+								<h2><a href="#">headline 1</a></h2>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+							</div>
+							<div class="article__item">
+								<strong class="article__date">09.09.2012</strong>
+								<h2><a href="#">headline 2</a></h2>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+							</div>
+							<div class="article__item">
+								<strong class="article__date">03.09.2012</strong>
+								<h2><a href="#">headline 3</a></h2>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+							</div>
+							<div class="article__item">
+								<strong class="article__date">01.09.2012</strong>
+								<h2><a href="#">headline 4</a></h2>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+							</div>
+						</div>
+					</div>
+					
 					<div class="tabs__box">
 						<div class="article__list">
 							<div class="article__item">
@@ -121,15 +153,12 @@
 							</div>
 						</div>
 					</div>
-					
-					<div class="tabs__box">
-						<div></div>
-					</div>
+					<a href="#"  class="link-more">All News & Events</a>
 				</div>
-				
 			</div>
+			
 		</div>
-		<div class="l-col4">
+		<div class="l-col4 l-col_last">
 			<div class="text-block_shadow"><div class="text-block__holder">
 				<h1 class="h1_mark">Client Testimonials</h1>
 				<figure>
@@ -137,6 +166,7 @@
 				</figure>
 				<h2 class="h2">Typer GmbH</h2>
 				<p>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est lorem ipsum."</p>
+				<a href="#"  class="link-more">All References</a>
 			</div></div>
 		</div>
 	</div>
