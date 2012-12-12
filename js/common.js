@@ -6,10 +6,6 @@ $(document).ready(function() {
 	});
 
 	$('.lang__drop li').click(function(){
-		var lang = $(this).parent().parent().prev().children('span');
-		var langn = lang.html();
-		lang.html($(this).children().html());
-		$(this).children().html(langn)
 		$(this).parent().parent().fadeOut('fast');
 	});
 
