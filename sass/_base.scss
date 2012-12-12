@@ -6,3 +6,18 @@
 $experimental-support-for-svg: true;
 // global sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px);
+
+$blue : #001060;
+
+$wgrid : 60px;
+$wskip : 20px;
+$maxgrid : 12;
+
+@function grid($n){
+	@return $wgrid * $n + $wskip * ($n - 1);
+}
+@function gridpr($n2){
+	$wpr : (grid($n2) * 100% / grid($maxgrid));
+	@return $wpr;
+}
+$wskpr : $wskip * 100% / grid($maxgrid);

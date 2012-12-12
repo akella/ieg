@@ -1,4 +1,29 @@
 /* default layout */
 .l { width: 100%; display: inline-block; }
-.l .l-col1 { float: left; width: 20%; }
-.l .l-col2 { float: right; width: 70%; }
+.l > :last-child { margin-right: 0; }
+
+.l-col1, .l-col2, .l-col3, .l-col4, .l-col5, .l-col6, .l-col7, .l-col8, .l-col9, .l-col10, .l-col11, .l-col12 { float: left; margin-right: 2.12766%; width: 60px; }
+
+.l-col2 { width: 140px; }
+
+.l-col3 { width: 220px; }
+
+.l-col4 { width: 300px; }
+
+.l-col5 { width: 380px; }
+
+.l-col6 { width: 460px; }
+
+.l-col7 { width: 540px; }
+
+.l-col8 { width: 620px; }
+
+.l-col9 { width: 700px; }
+
+.l-col10 { width: 780px; }
+
+.l-col11 { width: 860px; }
+
+.l-col12 { width: 940px; }
+
+.l-col_last { margin-right: 0; }
