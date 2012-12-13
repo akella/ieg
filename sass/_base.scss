@@ -8,7 +8,6 @@ $experimental-support-for-svg: true;
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 
 $blue : #001060;
-
 $wgrid : 60px;
 $wskip : 20px;
 $maxgrid : 12;
@@ -21,3 +20,20 @@ $maxgrid : 12;
 	@return $wpr;
 }
 $wskpr : $wskip * 100% / grid($maxgrid);
+$wsite : grid($maxgrid);
+
+// responsive
+@mixin respond-to($media) {
+	@if $media == step {
+		@media only screen and (max-width: 960px) { @content; }
+	}
+	@else if $media == step1 {
+		@media only screen and (max-width: 680px) { @content; }
+	}
+	@else if $media == step2 {
+		@media only screen and (max-width: 460px) { @content; }
+	}
+	@else if $media == step3 {  
+		@media only screen and (max-width: 320px) { @content; }
+	}
+}

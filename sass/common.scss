@@ -48,23 +48,32 @@ a{
 header,footer,nav,figure{display: block;}
 
 // common styles
-.in{
-	width: grid($maxgrid);
-	margin:0 auto; 
-}
 
 .header{
-	width: grid($maxgrid);
-	margin:0 auto;
-	height: 100px;
-	padding: 20px 0 0;
+	width: $wsite;
+	margin:0 auto; 
+	@include respond-to(step) {
+		width: 98%;
+	}
+	padding: 20px 0 10px;
 	.header__holder{
-		float: right;
-		width: grid(10);
+		display: inline-block;
+		width:100%;
+		@include respond-to(step2) {
+			display: block;
+		}
 	}
 	.header__top{
 		display: inline-block;
-		width: 100%; 
+		float: right;
+		margin-bottom:11px; 
+		@include respond-to(step2) {
+			display: block;
+			float: none;
+			margin: 0 auto;
+			padding-left: 20px;
+			width: 212px;
+		}
 	}
 }
 .logo{
@@ -72,17 +81,27 @@ header,footer,nav,figure{display: block;}
 	@include sized-sprite($icons, 'logo');
 	@include hide-text;
 	cursor: pointer;
+	margin-bottom: 11px;
+	@include respond-to(step2) {
+		display: block;
+		float: none;
+		margin:0 auto 11px; 
+	}
 	a{
 		display: block;
 		height: 100%;
 	}
 }
 .search-form{
-	float: right;
+	float: left;
 	position: relative;
 	margin-right: 20px;
+	@include respond-to(step1) {
+		float: none;
+		margin-bottom: 10px;
+	}
 	.input{
-		float: left;
+		display: block;
 		border:1px solid $blue;
 		font-family:"LucidaGrande", Tahoma, sans-serif;
 		width: 184px;
@@ -107,7 +126,7 @@ header,footer,nav,figure{display: block;}
 	font-weight: bold;
 	width: 140px;
 	text-align: center;
-	float: right;
+	float: left;
 	text-decoration: none;
 	height: 26px;
 	line-height: 26px;
@@ -115,7 +134,7 @@ header,footer,nav,figure{display: block;}
 	z-index:10; 
 }
 .lang{
-	float: right;
+	float: left;
 	font-weight: bold;
 	width: 50px; 
 	position: relative;
@@ -180,17 +199,24 @@ header,footer,nav,figure{display: block;}
 }
 .nav-holder{
 	display: inline-block;
-	width: 100%;
-	padding: 19px 0 0; 
-	}
-.nav{
 	float: right;
+	margin-top: 11px;
+	@include respond-to(step2) {
+		display: block;
+		float: none;
+		margin:0 auto 11px; 
+		clear: both;
+		padding-top: 22px;
+		text-align: center;
+	}
+}
+.nav{
 	li{
-		float: left;
+		display: inline-block;
 		list-style: none;
 		font-weight: bold;
 		text-transform: uppercase;
-		margin: 0 1px 0 30px;
+		margin: 0 1px 0 26px;
 		position: relative;
 		&:hover{
 			a{color:$blue;}
@@ -209,13 +235,23 @@ header,footer,nav,figure{display: block;}
 		left: 50%; 
 		width: 740px;
 		margin-left: -325px;
-		padding-top:31px; 
+		padding-top:31px;
+		z-index:15;
+		@include respond-to(step) {
+			width: 260px;
+			margin-left: -130px;
+		}
 		li{
-			margin:0 10px; 
+			margin:0 10px 20px; 
+			float: left;
+			@include respond-to(step) {
+				display: block;
+				float: none;
+			}
 		}
 		ul{
 			background: $blue;
-			padding:27px 10px 20px;
+			padding:27px 10px 1px;
 			font-family:"LucidaGrande-B", Tahoma, sans-serif;
 			overflow: hidden;
 		}
@@ -243,8 +279,13 @@ header,footer,nav,figure{display: block;}
 .header-media{
 	background: url(../img/bg-media.png);
 	text-align: center;
-	margin-bottom:30px; 
-	img{vertical-align: top;}
+	margin-bottom:20px; 
+	img{
+		vertical-align: top;
+			@include respond-to(step) {
+			width: 100%;
+		}
+	}
 }
 
 .footer{
@@ -304,6 +345,9 @@ header,footer,nav,figure{display: block;}
 		font-size: 14px;
 		color: #222;
 		border:0;
+		@include respond-to(step){
+			width: 198px;
+		}
 	}
 }
 .icon{
@@ -338,15 +382,29 @@ header,footer,nav,figure{display: block;}
 }
 
 .main{
-	margin: 0 auto;
-	width: grid($maxgrid); 
+	padding-top:10px; 
 	p{
-		margin:0 0 7px; 
+		margin:0 0 20px; 
+	}
+	.p_mark:before{
+		content:'';
+		height: 13px;
+		width: 13px;
+		display: inline-block;
+		background: #008375;
+		margin-right: 5px; 
+		position: relative;
+		top:1px;
 	}
 	figure{
 		margin:0 0 20px;
 		padding-top:10px;
-		img{vertical-align: top;} 
+		img{
+			@include respond-to(step) {
+				max-width: 100%;
+			}
+			vertical-align: top;
+		}
 	}
 }
 .h1{
@@ -384,8 +442,14 @@ header,footer,nav,figure{display: block;}
 	.text-block__holder{
 		position: relative;
 		padding:0 19px 0;
-		z-index:7; 
+		z-index:7;
+		margin-top: 13px;
 	}
+	.list{
+		margin:20px 0; 
+		li{margin-bottom: 20px;}
+	}
+	
 }
 .text-block_shadow{
 	@extend .text-block;
@@ -413,6 +477,9 @@ header,footer,nav,figure{display: block;}
 	}
 }
 .tabs{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 52px;
 	.tabs__nav{
 		height: 44px;
 		width: 100%; 
@@ -420,17 +487,21 @@ header,footer,nav,figure{display: block;}
 			float: left;
 			list-style: none;
 			background: #ccc;
-			width: 102px;
-			padding:0 19px; 
+			width: 35%;
+			padding:0 6%; 
 			position: relative;
 			cursor: pointer;
-			margin-left: 20px;
+			margin-left: 6%;
+			height: 44px;
 			&:first-child{margin-left: 0; }
 		}
 		a{text-decoration: none;}
 		h1{
 			color: #fff;
 			margin-bottom:5px; 
+			@include respond-to(step2) {
+				font-size: 15px;
+			}
 			&:before{background: #fff;}
 		}
 		.active{
@@ -486,5 +557,63 @@ header,footer,nav,figure{display: block;}
 		position: relative;
 		z-index:9;
 		display: none;
+	}
+}
+
+.in{
+	width: $wsite;
+	margin:0 auto; 
+	@include respond-to(step) {
+		width: 100%;
+		background: #f00; 
+	}
+	@include respond-to(step1) {
+		background: #0f0; 
+	}
+	@include respond-to(step2) {
+		background: #00f; 
+	}
+	@include respond-to(step3) {
+		background: #f0f; 
+	}
+}
+.main{
+	width: $wsite;
+	margin:0 auto; 
+	@include respond-to(step) {
+		width: 100%;
+		background: #f00; 
+		.l{
+			padding:0 8px;
+			width: auto; 
+		}
+	}
+	@include respond-to(step1) {
+		background: #0f0; 
+	}
+	@include respond-to(step2) {
+		background: #00f; 
+	}
+	@include respond-to(step3) {
+		background: #f0f; 
+	}
+}
+.footer .in{
+	@include respond-to(step) {
+		width: 96%; 
+	}
+	@include respond-to(step2) {
+		width: 90%;
+		.l-col{width: 100%; }
+	}
+}
+.l-col-group{
+	@include respond-to(step1) {
+		display: inline-block;
+		width: 100%;
+		&>div:last-child{margin-right: 0;}
+		.l-col2,.l-col3,.l-col4{
+			width: 50% - $wskpr / 2;
+		}
 	}
 }

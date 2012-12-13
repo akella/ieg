@@ -18,18 +18,108 @@
 				&:hover{text-decoration: underline;}
 			}
 		}
+		p{margin-bottom: 7px;}
 		&:first-child{border:0;}
 	}
 }
 
 .trans-list{
 	overflow: hidden;
-	margin:0 -2px 24px; 
+	margin:0 -13px 14px; 
 	li{
 		float: left;
 		list-style: none;
-		margin-left:20px;
-		&:first-child{margin-left: 0;} 
+		margin:0 10px 10px;
+		@include respond-to(step){
+			text-align: center;
+			float: none; 
+		}
 	}
 	img{vertical-align: top;}
+}
+
+.services{
+	overflow: hidden;
+	padding:33px 0 0;
+	.services__left{
+		float: left;
+	}
+	.services__top{
+		padding:0 6px;
+		border-right: 1px solid #ccc; 
+		margin-bottom:9px; 
+	}
+	.services__bottom{
+		padding:0 6px;
+		border-right: 1px solid #ccc; 
+		li{
+			height: 60px;
+
+		}
+		.two-lines{
+			padding-top:6px;
+			height: 54px;
+			line-height:14px;
+		}
+	}
+	.services__col{
+		float: left;
+		width: 206px;
+		text-decoration: none;
+		a{
+			text-decoration: none;
+			&:hover{
+				li{
+				background: #c5d7e7;
+				}
+				h2{
+					@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
+				}
+			}
+		}
+	}
+	.services__col_last .services__top, .services__col_last .services__bottom{border-right:0; }
+	h2{
+		line-height: 40px;
+		color: #fff;
+		font-weight: normal;
+		font-size: 12px;
+		margin-bottom: 8px;
+		text-align: center;
+		text-transform: uppercase;
+		@include background-image(linear-gradient(to right, #aab0be 0%,#a9afbb 15%,#aeb2bd 23%,#e0e4e7 82%,#e7ebec 100%));
+	}
+	li{
+		background: #e2e5e6;
+		height: 40px;
+		line-height:40px;  
+		margin-bottom: 4px;
+		list-style: none;
+		text-align: center;
+		color: #000a4e;
+		font-size: 12px;
+	}
+	.two-lines{
+		line-height:14px;
+		height:34px;
+		padding-top:6px;
+	}
+	.services__empty{background: #eef0f1; }
+	.services__left{
+		width: 40px;
+		height: 100%; 
+		position: relative;
+		.services__top, .services__bottom{
+			background: #9ea5ad;
+			width: 264px;
+			height: 40px;
+			line-height:40px;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: #fff;
+			text-align: center;
+			@include rotate(-90);
+			position: absolute;
+		}
+	}
 }
