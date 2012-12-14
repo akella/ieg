@@ -41,6 +41,7 @@
 .services{
 	overflow: hidden;
 	padding:33px 0 0;
+	margin: 0 0 0 4px;
 	.services__left{
 		float: left;
 	}
@@ -68,7 +69,7 @@
 		text-decoration: none;
 		a{
 			text-decoration: none;
-			&:hover{
+			&:hover, &.services__color{
 				li{
 				background: #c5d7e7;
 				}
@@ -78,7 +79,13 @@
 			}
 		}
 	}
-	.services__col_last .services__top, .services__col_last .services__bottom{border-right:0; }
+	.services__col_last{
+		width: 200px; 
+	}
+	.services__col_last .services__top, .services__col_last .services__bottom{
+		border-right:0;
+		padding-right: 0;
+	}
 	h2{
 		line-height: 40px;
 		color: #fff;
@@ -107,19 +114,82 @@
 	.services__empty{background: #eef0f1; }
 	.services__left{
 		width: 40px;
-		height: 100%; 
-		position: relative;
-		.services__top, .services__bottom{
+		padding-top: 48px;
+		.services__bottom, .services__top{
 			background: #9ea5ad;
-			width: 264px;
-			height: 40px;
-			line-height:40px;
-			font-size: 12px;
-			text-transform: uppercase;
-			color: #fff;
-			text-align: center;
-			@include rotate(-90);
-			position: absolute;
+			border:0;
+			padding: 0;
+		}
+		.title_advisory{
+			@include sized-sprite($icons, 'title-advisory');
+			@include hide-text;
+			background-size: auto;
+			padding: 0; 
+		}
+		.title_placement{
+			@include sized-sprite($icons, 'title-placement');
+			@include hide-text;
+			background-size: auto;
+			padding: 0; 
+		}
+	}
+}
+
+.services_big{
+	margin: 0 0 0 32px;
+	.services__bottom{
+		padding:0 6px;
+		border-right: 1px solid #ccc; 
+		li{height: 60px;}
+		.two-lines{
+			padding-top:6px;
+			height: 74px;
+			line-height:18px;
+		}
+	}
+	.services__col{
+		width: 230px;
+		text-decoration: none;
+		border-right:0;
+		padding-right:0;
+		a{
+			text-decoration: none;
+			li{background: #c5d7e7;}
+			h2{
+				@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
+			}
+		}
+	}
+	h2{
+		line-height: 46px;
+		font-size: 14px;
+		margin-bottom: 8px;
+		text-align: left;
+		padding-left:18px; 
+	}
+	li{
+		background: #e2e5e6;
+		height: 47px;
+		line-height:47px;  
+		margin-bottom: 5px;
+		text-align: left;
+		font-size: 14px;
+		padding-left:14px;
+	}
+	.two-lines{
+		line-height:16px;
+		height:40px;
+		padding-top:7px;
+	}
+	.services__left{
+		width: 46px;
+		padding-top: 54px;
+		margin-right: 2px;
+		.title_advisory{
+			@include sized-sprite($icons, 'title-advisory_big');
+		}
+		.title_placement{
+			@include sized-sprite($icons, 'title-placement_big');
 		}
 	}
 }

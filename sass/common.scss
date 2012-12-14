@@ -403,6 +403,9 @@ header,footer,nav,figure{display: block;}
 			@include respond-to(step) {
 				max-width: 100%;
 			}
+			@include respond-to(step3) {
+				width: 100%;
+			}
 			vertical-align: top;
 		}
 	}
