@@ -152,12 +152,9 @@
 		text-decoration: none;
 		border-right:0;
 		padding-right:0;
-		a{
-			text-decoration: none;
-			li{background: #c5d7e7;}
-			h2{
-				@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
-			}
+		li{background: #c5d7e7;}
+		h2{
+			@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
 		}
 	}
 	h2{
@@ -199,6 +196,14 @@
 	.industry-focus__row{
 		overflow: hidden;
 		margin-bottom: 4px;
+		&:hover{
+			h2{
+				@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
+			}
+			li{
+				background: #c5d7e7;
+			}
+		}
 	}
 	h2{
 		@include background-image(linear-gradient(to right, #aab0be 0%,#a9afbb 15%,#aeb2bd 23%,#e0e4e7 82%,#e7ebec 100%));
@@ -226,11 +231,7 @@
 		margin:0 9px 5px 0;
 		color: #000a4e;
 		line-height: 40px;
-		&:hover{
-			h2{
-				@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
-			}
-		}
+		
 	}
 }
 
@@ -278,5 +279,135 @@
 	}
 	.team__social{
 		float: right;
+	}
+}
+.linkedin{
+	display: block;
+	@include sized-sprite($icons, 'linkedin');
+}
+.person__data{
+	padding: 0 0 32px;
+	.h1_mark{
+		margin: 17px 0 32px;
+	}
+	p{
+		margin: 0 25px 10px;
+		line-height: 1.4;
+	}
+}
+.person__info{
+	padding:0 0 5px; 
+	h2{
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: normal;
+		border-bottom:1px solid #ccc;
+		margin-bottom: 35px;
+		span{
+			border:1px solid #ccc;
+			border-width:1px 1px 0 0;
+			background: #fff;
+			display: inline-block;
+			position: relative;
+			bottom: -1px;
+			padding: 4px 0 7px 25px;
+			width: 190px; 
+		}
+	}
+	dl{
+		width: 100%;
+		display: inline-block;
+	}
+	dt{
+		float: left;
+		font-weight: bold;
+		width: 25%; 
+		padding:0 0 0 3.8%;  
+		margin:0 0 33px;
+	}
+	dd{
+		float: left;
+		width: 60%;
+		margin:0 0 33px; 
+	}
+}
+.h1_pers{
+	@extend .h1;
+	margin-bottom: 0;
+}
+.person__post{
+	color: #999;
+	display: block;
+	font-size: 13px;
+	margin: -3px 0 25px;
+	position: relative;
+}
+.person__photo{margin:0 0 10px;}
+
+.map-holder{
+	margin:0 0 25px;
+	position: relative;
+}
+.map-legend{
+	position: absolute;
+	right: -5px;
+	top: -30px;
+}
+.add-menu{
+	li{
+		list-style: none;
+	}
+	a{
+		color: $blue;
+		font-size: 13px;
+		text-decoration: none;
+		
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.active a{
+		font-weight: bold;
+	}
+}
+.img-text{
+	display: inline-block;
+	width: 100%;
+	.h2{
+		margin: 10px 0 20px;
+	}
+}
+.main  .img-left{
+	float: left;
+	margin-right:40px; 
+}
+.trans-list_big{
+	@extend .trans-list;
+	img{
+		border:1px solid #c5c5c9;
+		width: 137px;
+	}
+	li{
+		cursor: pointer;
+		margin: 0 16px 35px;
+		&:hover{
+			box-shadow:3px 3px 5px rgba(0,0,0,.2);
+		}
+	}
+}
+
+.position-list{
+	li{
+		list-style: none;
+		border-bottom:1px dotted $blue;
+		padding:30px 0 15px; 
+	}
+	h2{
+		font-size:16px;
+		color: $blue;
+		margin-bottom: -1px;
+	}
+	p{
+
 	}
 }
