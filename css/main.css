@@ -123,13 +123,23 @@ $break-large: 1180px;
 .employee .employee__post { clear: both; color: #424242; font-size: 13px; }
 .employee .employee__post span { display: block; }
 
-.contact-box { width: 100%; margin: 17px 0 44px; display: inline-block; }
-.contact-box .contact-box__img { float: left; margin: 0 20px 0 0; padding: 0; }
-.contact-box .contact-box__info { float: left; width: 200px; line-height: 1.3; }
-.contact-box h1 { margin-top: 0; }
-.contact-box h2 { font-size: 14px; color: #333333; }
-.contact-box span { display: block; }
-.contact-box p { margin: 0 0 17px; }
+.contact-box, .contact-box_wi { width: 100%; margin: 17px 0 44px; display: inline-block; }
+.contact-box .contact-box__img, .contact-box_wi .contact-box__img { float: left; margin: 0 20px 0 0; padding: 0; }
+.contact-box .contact-box__info, .contact-box_wi .contact-box__info { float: left; width: 200px; line-height: 1.3; }
+.contact-box h1, .contact-box_wi h1 { margin-top: 0; }
+.contact-box h2, .contact-box_wi h2, .contact-box h3, .contact-box_wi h3 { font-size: 14px; color: #333333; }
+.contact-box span, .contact-box_wi span { display: block; }
+.contact-box p, .contact-box_wi p { margin: 0 0 17px; }
+
+.contact-box_wi { margin: 5px 0 35px; }
+.contact-box_wi .contact-box__info { margin-left: 21px; width: auto; }
+
+.h2_mark { color: #424242; font-size: 16px; margin-bottom: 10px; }
+.h2_mark:before { background: none repeat scroll 0 0 #008375; content: ""; display: inline-block; height: 13px; margin-right: 7px; position: relative; top: 0; width: 13px; }
+
+.contact-box h1, .contact-box_wi h1, .contact-box_wi h1 { margin-top: 0; }
+
+.h1, .h1_pers, .h1_mark, .h1_pers { color: #001060; font-size: 18px; margin: 13px 0 18px; }
 
 .event { margin: 0 0 40px; }
 .event h1 { margin: 15px 0 30px; }
@@ -146,3 +156,21 @@ $break-large: 1180px;
 .pagi { color: #001060; text-align: center; margin: 50px 0 0 55px; }
 .pagi a { color: #001060; text-decoration: none; }
 .pagi a:hover { text-decoration: underline; }
+
+.btn_gray { background: #e0e0e0; color: #001060; width: 140px; height: 26px; line-height: 26px; text-align: center; margin-bottom: 13px; font-weight: bold; cursor: pointer; }
+
+.contact-form h1 { margin-bottom: 25px; }
+
+.row { display: inline-block; width: 100%; margin-bottom: 15px; }
+
+.input { color: #000; font-family: Tahoma, sans-serif; font-size: 12px; height: 23px; width: 425px; padding: 0 5px; }
+
+.label { font-size: 14px; font-weight: bold; width: 140px; color: #424242; float: left; }
+
+.input_textarea { width: 425px; padding: 5px; height: 125px; }
+
+.btn_submit { background: #001060; width: 140px; height: 27px; color: #fff; text-transform: uppercase; border: 0; float: right; font-weight: bold; cursor: pointer; }
+
+.office-list { padding: 0 0 0 20px; line-height: 1.3; }
+.office-list dt { float: left; width: 104px; }
+.office-list dd { margin-left: 104px; }
