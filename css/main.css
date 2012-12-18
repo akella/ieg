@@ -106,5 +106,43 @@ $break-large: 1180px;
 .trans-list_big li { cursor: pointer; margin: 0 16px 35px; }
 .trans-list_big li:hover { box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); }
 
-.position-list li { list-style: none; border-bottom: 1px dotted #001060; padding: 30px 0 15px; }
-.position-list h2 { font-size: 16px; color: #001060; margin-bottom: -1px; }
+.position .position__item { list-style: none; border-bottom: 1px dotted #001060; padding: 30px 0 15px; }
+.position h2 { font-size: 16px; color: #001060; margin-bottom: -1px; }
+
+.press .press__item { list-style: none; border-top: 1px dotted #001060; padding: 10px 0 0; }
+.press .press__item:first-child { border: 0; }
+.press em { font-size: 12px; color: #424242; font-style: normal; }
+.press h2 { font-size: 16px; color: #001060; margin-bottom: -1px; }
+.press p { margin-bottom: 18px; }
+
+.employee { margin: 17px 0 44px; }
+.employee .employee__img { float: left; margin: 0 10px 12px 0; padding: 0; }
+.employee h1 { margin: 0 0 22px; }
+.employee img { vertical-align: top; }
+.employee p { margin-top: 0; line-height: 1.3; }
+.employee .employee__post { clear: both; color: #424242; font-size: 13px; }
+.employee .employee__post span { display: block; }
+
+.contact-box { width: 100%; margin: 17px 0 44px; display: inline-block; }
+.contact-box .contact-box__img { float: left; margin: 0 20px 0 0; padding: 0; }
+.contact-box .contact-box__info { float: left; width: 200px; line-height: 1.3; }
+.contact-box h1 { margin-top: 0; }
+.contact-box h2 { font-size: 14px; color: #333333; }
+.contact-box span { display: block; }
+.contact-box p { margin: 0 0 17px; }
+
+.event { margin: 0 0 40px; }
+.event h1 { margin: 15px 0 30px; }
+.event .event__item { margin: 0 0 20px; }
+.event em { font-size: 12px; color: #424242; font-style: normal; }
+.event h2 { font-size: 16px; color: #001060; margin: 0 0 -2px; }
+
+.tab-menu { text-align: right; margin: -9px 0 -17px; }
+.tab-menu li { list-style: none; display: inline-block; font-size: 13px; border-left: 1px solid #999; padding: 0 6px 0 9px; line-height: 1; }
+.tab-menu li:first-child { border: 0; }
+.tab-menu a { color: #999; text-decoration: none; }
+.tab-menu a:hover { text-decoration: underline; }
+
+.pagi { color: #001060; text-align: center; margin: 50px 0 0 55px; }
+.pagi a { color: #001060; text-decoration: none; }
+.pagi a:hover { text-decoration: underline; }

@@ -584,20 +584,20 @@ header,footer,nav,figure{display: block;}
 	margin:0 auto; 
 	@include respond-to(step) {
 		width: 100%;
-		background: #f00; 
+		//background: #f00; 
 		.l{
 			padding:0 8px;
 			width: auto; 
 		}
 	}
 	@include respond-to(step1) {
-		background: #0f0; 
+		//background: #0f0; 
 	}
 	@include respond-to(step2) {
-		background: #00f; 
+		//background: #00f; 
 	}
 	@include respond-to(step3) {
-		background: #f0f; 
+		//background: #f0f; 
 	}
 }
 .footer .in{
