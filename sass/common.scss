@@ -1,29 +1,4 @@
 @import "base";
-// =======Sprites
-// .whatever{
-// 	@include sized-sprite($icons, badge_hit);
-// 	@include retina{
-// 		@include sized-sprite($icons, badge_new);
-// 	}
-// }
-// =======animation example
-// @include keyframes(rotate) {
-//    from {
-//       @include rotate(0);
-//    }
-//    to {
-//       @include rotate(360);
-//    }
-// }
-// body:hover{
-// 	@include animation(rotate 200s linear infinite);
-// }
-// ========gradient example
-// body{
-// @include background-image(linear-gradient(#232323, #5c5c5c));
-// }
-
-
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
 body{
@@ -402,9 +377,6 @@ header,footer,nav,figure{display: block;}
 			@include respond-to(step) {
 				max-width: 100%;
 			}
-			@include respond-to(step3) {
-				width: 100%;
-			}
 			vertical-align: top;
 		}
 	}
@@ -446,6 +418,9 @@ header,footer,nav,figure{display: block;}
 		padding:0 19px 0;
 		z-index:7;
 		margin-top: 13px;
+		@include respond-to(step) {
+			img{max-width: 100%;}
+		}
 	}
 	.list{
 		margin:20px 0; 
@@ -567,16 +542,16 @@ header,footer,nav,figure{display: block;}
 	margin:0 auto; 
 	@include respond-to(step) {
 		width: 100%;
-		background: #f00; 
+	//	background: #f00; 
 	}
 	@include respond-to(step1) {
-		background: #0f0; 
+	//	background: #0f0; 
 	}
 	@include respond-to(step2) {
-		background: #00f; 
+	//	background: #00f; 
 	}
 	@include respond-to(step3) {
-		background: #f0f; 
+	//	background: #f0f; 
 	}
 }
 .main{
@@ -584,20 +559,22 @@ header,footer,nav,figure{display: block;}
 	margin:0 auto; 
 	@include respond-to(step) {
 		width: 100%;
-		//background: #f00; 
+	//	background: #f00; 
 		.l{
 			padding:0 8px;
-			width: auto; 
+			width: auto;
 		}
 	}
 	@include respond-to(step1) {
-		//background: #0f0; 
+	//	background: #0f0; 
 	}
 	@include respond-to(step2) {
-		//background: #00f; 
+	//	background: #00f;
+
 	}
 	@include respond-to(step3) {
-		//background: #f0f; 
+	//	background: #f0f;
+
 	}
 }
 .footer .in{

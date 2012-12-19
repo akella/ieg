@@ -4,7 +4,9 @@
 .l{
 	width: 100%;
 	display: inline-block;
-	/*&>:last-child{margin-right: 0;}*/
+	@include respond-to(step2) {
+		display: block;
+	}
 }
 .l-col1{
 	@extend .l-col;
@@ -21,10 +23,6 @@
 .l-col4{
 	@extend .l-col;
 	width: gridpr(4);
-	@include respond-to(step2) {
-		width: 100%;
-		float: none; 
-	}
 }
 .l-col5{
 	@extend .l-col;
@@ -34,6 +32,7 @@
 	@extend .l-col;
 	width: gridpr(6);
 }
+
 .l-col7{
 	@extend .l-col;
 	width: gridpr(7);
@@ -63,7 +62,7 @@
 .l-col{
 	float:left;
 	margin-right:$wskpr; 
-	@include respond-to(step3) {
+	@include respond-to(step2) {
 		width: 100%;
 		float: none; 
 	}
