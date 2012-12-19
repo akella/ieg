@@ -34,8 +34,12 @@ $break-large: 1180px;
 .services .services__empty { background: #eef0f1; }
 .services .services__left { width: 40px; padding-top: 48px; }
 .services .services__left .services__bottom, .services .services__left .services__top { background: #9ea5ad; border: 0; padding: 0; }
-.services .services__left .title_advisory { background: url('../img/icons-s6d6e3e9d4a.png') 0 -360px no-repeat; width: 40px; height: 216px; font: 0/0 a; text-shadow: none; color: transparent; background-size: auto; padding: 0; }
-.services .services__left .title_placement { background: url('../img/icons-s6d6e3e9d4a.png') 0 -761px no-repeat; width: 40px; height: 124px; font: 0/0 a; text-shadow: none; color: transparent; background-size: auto; padding: 0; }
+.services .services__left .title_advisory { background: url(../img/title-advisory.png) 50% 50%; height: 216px; width: 40px; font: 0/0 a; text-shadow: none; color: transparent; background-size: auto; padding: 0; }
+.services .services__left .title_placement { background: url(../img/title-placement.png) 50% 50%; height: 124px; width: 40px; font: 0/0 a; text-shadow: none; color: transparent; background-size: auto; padding: 0; }
+@media only screen and (max-width: 960px) { .services { width: 99%; margin-left: 1%; }
+  .services .services__left { width: 6%; }
+  .services .services__left .title_advisory, .services .services__left .title_placement { width: 100%; }
+  .services .services__col { width: 31%; } }
 
 .services_big { margin: 0 0 0 32px; }
 .services_big .services__bottom { padding: 0 6px; border-right: 1px solid #ccc; }
@@ -48,8 +52,12 @@ $break-large: 1180px;
 .services_big li { background: #e2e5e6; height: 47px; line-height: 47px; margin-bottom: 5px; text-align: left; font-size: 14px; padding-left: 14px; }
 .services_big .two-lines { line-height: 16px; height: 40px; padding-top: 7px; }
 .services_big .services__left { width: 46px; padding-top: 54px; margin-right: 2px; }
-.services_big .services__left .title_advisory { background: url('../img/icons-s6d6e3e9d4a.png') 0 -95px no-repeat; width: 46px; height: 255px; }
-.services_big .services__left .title_placement { background: url('../img/icons-s6d6e3e9d4a.png') 0 -586px no-repeat; width: 46px; height: 165px; }
+.services_big .services__left .title_advisory { background: url(../img/title-advisory_big.png) 50% 50%; width: 46px; height: 255px; }
+.services_big .services__left .title_placement { background: url(../img/title-placement_big.png) 50% 50%; width: 46px; height: 165px; }
+@media only screen and (max-width: 960px) { .services_big { width: 90%; margin-left: 9%; }
+  .services_big .services__left { width: 14.8%; margin-right: 0.6%; }
+  .services_big .services__left .title_advisory, .services_big .services__left .title_placement { width: 100%; }
+  .services_big .services__col { width: 74%; } }
 
 .industry-focus { padding: 31px 0 0 16px; }
 .industry-focus .industry-focus__row { overflow: hidden; margin-bottom: 4px; }
@@ -75,7 +83,7 @@ $break-large: 1180px;
 .team .team__name h3 { font-weight: normal; font-size: 15px; margin-left: 18px; }
 .team .team__social { float: right; }
 
-.linkedin { display: block; background: url('../img/icons-s6d6e3e9d4a.png') 0 -1174px no-repeat; width: 16px; height: 16px; }
+.linkedin { display: block; background: url('../img/icons-s1565973380.png') 0 -374px no-repeat; width: 16px; height: 16px; }
 
 .person__data { padding: 0 0 32px; }
 .person__data .h1_mark { margin: 17px 0 32px; }
@@ -208,6 +216,6 @@ $break-large: 1180px;
 .search .search__result { border-bottom: 1px solid #ccc; padding-bottom: 15px; margin-bottom: 10px; }
 .search .search__result h3 { font-size: 13px; font-weight: bold; line-height: 16px; color: #001060; }
 .search .search__result h3 a { color: #000; }
-.search .search__result h3:before { content: ""; display: inline-block; background: url('../img/icons-s6d6e3e9d4a.png') 0 -1123px no-repeat; width: 18px; height: 16px; position: relative; top: 4px; }
+.search .search__result h3:before { content: ""; display: inline-block; background: url('../img/icons-s1565973380.png') 0 -323px no-repeat; width: 18px; height: 16px; position: relative; top: 4px; }
 .search .search__result p { margin: 0; }
 .search .search__result strong { color: #bbc23a; }

@@ -121,17 +121,31 @@
 			padding: 0;
 		}
 		.title_advisory{
-			@include sized-sprite($icons, 'title-advisory');
+			background: url(../img/title-advisory.png) 50% 50%;
+			height: 216px;
+			width: 40px;
 			@include hide-text;
 			background-size: auto;
 			padding: 0; 
 		}
 		.title_placement{
-			@include sized-sprite($icons, 'title-placement');
+			background: url(../img/title-placement.png) 50% 50%;
+			height: 124px;
+			width: 40px;
 			@include hide-text;
 			background-size: auto;
 			padding: 0; 
 		}
+	}
+
+	@include respond-to(step) {
+		width: 99%;
+		margin-left:1%;
+		.services__left{
+			width: 6%; 
+			.title_advisory, .title_placement{width: 100%; }
+		}
+		.services__col{width: 31%;}
 	}
 }
 
@@ -183,11 +197,25 @@
 		padding-top: 54px;
 		margin-right: 2px;
 		.title_advisory{
-			@include sized-sprite($icons, 'title-advisory_big');
+			background: url(../img/title-advisory_big.png) 50% 50%;
+			width: 46px;
+			height: 255px;
 		}
 		.title_placement{
-			@include sized-sprite($icons, 'title-placement_big');
+			background: url(../img/title-placement_big.png) 50% 50%;
+			width: 46px;
+			height: 165px;
 		}
+	}
+	@include respond-to(step) {
+		width: 90%;
+		margin-left:9%;
+		.services__left{
+			width: 14.8%;
+			margin-right:0.6%;
+			.title_advisory, .title_placement{width: 100%; }
+		}
+		.services__col{width: 74%;}
 	}
 }
 

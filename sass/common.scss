@@ -522,6 +522,7 @@ header,footer,nav,figure{display: block;}
 			width:100%;
 			padding:0 8px; 
 			@include background-image(linear-gradient(rgba(255,255,255,.0), #fff));
+			
 			height: 175px;
 			position: absolute;
 			content:'';
