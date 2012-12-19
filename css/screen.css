@@ -186,6 +186,8 @@ $break-large: 1180px;
 
 .l-col12 { width: 100%; }
 
+@media only screen and (max-width: 960px) { .l-col_st { width: 100%; float: none; } }
+
 .l-col, .l-col1, .l-col2, .l-col3, .l-col4, .l-col5, .l-col6, .l-col7, .l-col8, .l-col9, .l-col10, .l-col11, .l-col12 { float: left; margin-right: 2.12766%; }
 @media only screen and (max-width: 460px) { .l-col, .l-col1, .l-col2, .l-col3, .l-col4, .l-col5, .l-col6, .l-col7, .l-col8, .l-col9, .l-col10, .l-col11, .l-col12 { width: 100%; float: none; } }
 
@@ -233,6 +235,11 @@ $break-large: 1180px;
   .services .services__left { width: 6%; }
   .services .services__left .title_advisory, .services .services__left .title_placement { width: 100%; }
   .services .services__col { width: 31%; } }
+@media only screen and (max-width: 680px) { .services .services__col { width: 100%; }
+  .services .services__col .services__bottom, .services .services__col .services__top { border: 0; padding: 0; }
+  .services .services__col .services__bottom:before, .services .services__col .services__top ul:before { content: "ADVISORY & EXECUTION"; display: block; text-transform: uppercase; text-align: center; height: 30px; line-height: 30px; margin-bottom: 4px; background: #9ea5ad; color: #fff; font-size: 10px; }
+  .services .services__col .services__bottom:before { content: "PLACEMENT"; }
+  .services .services__left { display: none; } }
 
 .services_big { margin: 0 0 0 32px; }
 .services_big .services__bottom { padding: 0 6px; border-right: 1px solid #ccc; }
@@ -276,7 +283,7 @@ $break-large: 1180px;
 .team .team__name h3 { font-weight: normal; font-size: 15px; margin-left: 18px; }
 .team .team__social { float: right; }
 
-.linkedin { display: block; background: url('../img/icons-s1565973380.png') 0 -374px no-repeat; width: 16px; height: 16px; }
+.linkedin { display: block; background: url('icons-s1565973380.png') 0 -374px no-repeat; width: 16px; height: 16px; }
 
 .person__data { padding: 0 0 32px; }
 .person__data .h1_mark { margin: 17px 0 32px; }
@@ -409,6 +416,6 @@ $break-large: 1180px;
 .search .search__result { border-bottom: 1px solid #ccc; padding-bottom: 15px; margin-bottom: 10px; }
 .search .search__result h3 { font-size: 13px; font-weight: bold; line-height: 16px; color: #001060; }
 .search .search__result h3 a { color: #000; }
-.search .search__result h3:before { content: ""; display: inline-block; background: url('../img/icons-s1565973380.png') 0 -323px no-repeat; width: 18px; height: 16px; position: relative; top: 4px; }
+.search .search__result h3:before { content: ""; display: inline-block; background: url('icons-s1565973380.png') 0 -323px no-repeat; width: 18px; height: 16px; position: relative; top: 4px; }
 .search .search__result p { margin: 0; }
 .search .search__result strong { color: #bbc23a; }

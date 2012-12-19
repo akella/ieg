@@ -40,6 +40,11 @@ $break-large: 1180px;
   .services .services__left { width: 6%; }
   .services .services__left .title_advisory, .services .services__left .title_placement { width: 100%; }
   .services .services__col { width: 31%; } }
+@media only screen and (max-width: 680px) { .services .services__col { width: 100%; }
+  .services .services__col .services__bottom, .services .services__col .services__top { border: 0; padding: 0; }
+  .services .services__col .services__bottom:before, .services .services__col .services__top ul:before { content: "ADVISORY & EXECUTION"; display: block; text-transform: uppercase; text-align: center; height: 30px; line-height: 30px; margin-bottom: 4px; background: #9ea5ad; color: #fff; font-size: 10px; }
+  .services .services__col .services__bottom:before { content: "PLACEMENT"; }
+  .services .services__left { display: none; } }
 
 .services_big { margin: 0 0 0 32px; }
 .services_big .services__bottom { padding: 0 6px; border-right: 1px solid #ccc; }

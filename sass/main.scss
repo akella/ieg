@@ -147,6 +147,29 @@
 		}
 		.services__col{width: 31%;}
 	}
+	@include respond-to(step1){
+		.services__col{
+			width:100%;
+			.services__bottom, .services__top{
+			border:0;
+			padding: 0;
+			}
+			.services__bottom:before, .services__top ul:before{
+				content:"ADVISORY & EXECUTION";
+				display: block;
+				text-transform: uppercase;
+				text-align: center;
+				height: 30px;
+				line-height: 30px;
+				margin-bottom: 4px;
+				background: #9ea5ad;
+				color:#fff;
+				font-size: 10px;
+			}
+			.services__bottom:before{content:"PLACEMENT";}
+		}
+		.services__left{display: none;}
+	}
 }
 
 .services_big{
