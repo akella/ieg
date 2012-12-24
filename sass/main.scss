@@ -9,7 +9,7 @@
 			font-weight: bold;
 			display: block;
 		}
-		h2{
+		.article__title{
 			font-size: 16px;
 			color: $blue;
 			line-height: 1.3;
@@ -73,7 +73,7 @@
 				li{
 				background: #c5d7e7;
 				}
-				h2{
+				.services__title{
 					@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
 				}
 			}
@@ -86,7 +86,7 @@
 		border-right:0;
 		padding-right: 0;
 	}
-	h2{
+	.services__title{
 		line-height: 40px;
 		color: #fff;
 		font-weight: normal;
@@ -190,11 +190,11 @@
 		border-right:0;
 		padding-right:0;
 		li{background: #c5d7e7;}
-		h2{
+		.services__title{
 			@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
 		}
 	}
-	h2{
+	.services__title{
 		line-height: 46px;
 		font-size: 14px;
 		margin-bottom: 8px;
@@ -250,7 +250,7 @@
 		ul{overflow: hidden;
 		}
 		&:hover{
-			h2{
+			.industry-focus__title{
 				@include background-image(linear-gradient(to right, #000841 0%,#040e49 22%,#7b8aa9 100%));
 			}
 			li{
@@ -258,7 +258,7 @@
 			}
 		}
 	}
-	h2{
+	.industry-focus__title{
 		@include background-image(linear-gradient(to right, #aab0be 0%,#a9afbb 15%,#aeb2bd 23%,#e0e4e7 82%,#e7ebec 100%));
 		height: 85px;
 		line-height: 85px;
@@ -287,7 +287,7 @@
 		width: 96.75%;
 		padding-left: 1.55%;
 		margin: 0 auto;
-		h2{
+		.industry-focus__title{
 			padding:0 2.65%;
 			width: 24%;
 			margin-right:1.6%;  
@@ -299,7 +299,7 @@
 		}
 	}
 	@include respond-to(step1){
-		h2{
+		.industry-focus__title{
 			width: 92.5%;
 			float: none;
 			text-align: center;
@@ -330,7 +330,7 @@
 	.team__name{
 		float: left;
 		margin:9px 0 0 20px; 
-		h2{
+		.team__h2{
 			color: $blue;
 			font-size: 13px;
 			text-transform: uppercase;
@@ -349,7 +349,7 @@
 				top:1px;
 			}
 		}
-		h3{
+		.team__post{
 			font-weight:normal;
 			font-size: 15px;
 			margin-left:18px; 
@@ -375,7 +375,7 @@
 }
 .person__info{
 	padding:0 0 5px; 
-	h2{
+	.person__inf-title{
 		text-transform: uppercase;
 		font-size: 14px;
 		font-weight: normal;
@@ -494,7 +494,7 @@
 		border-bottom:1px dotted $blue;
 		padding:30px 0 15px; 
 	}
-	h2{
+	.position__title{
 		font-size:16px;
 		color: $blue;
 		margin-bottom: -1px;
@@ -513,7 +513,7 @@
 		color: #424242;
 		font-style: normal;
 	}
-	h2{
+	.press__title{
 		font-size:16px;
 		color: $blue;
 		margin-bottom: -1px;
@@ -523,7 +523,7 @@
 	}
 }
 
-
+/* Next */
 .employee{
 	margin: 17px 0 44px;
 	.employee__img{
@@ -601,7 +601,7 @@
 
 .event{
 	margin:0 0 40px; 
-	h1{margin:15px 0 30px;}
+	.h1{margin:15px 0 30px;}
 	.event__item{margin:0 0 20px;}
 	em{
 		font-size: 12px;
