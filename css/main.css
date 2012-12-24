@@ -160,12 +160,7 @@ $break-large: 1180px;
 .contact-box_wi { margin: 5px 0 35px; }
 .contact-box_wi .contact-box__info { margin-left: 21px; width: auto; }
 
-.h2_mark { color: #424242; font-size: 16px; margin-bottom: 10px; }
-.h2_mark:before { background: none repeat scroll 0 0 #008375; content: ""; display: inline-block; height: 13px; margin-right: 7px; position: relative; top: 0; width: 13px; }
-
 .contact-box h1, .contact-box_wi h1, .contact-box_wi h1 { margin-top: 0; }
-
-.h1, .h1_pers, .h1_mark, .h1_pers { color: #001060; font-size: 18px; margin: 13px 0 18px; }
 
 .event { margin: 0 0 40px; }
 .event h1 { margin: 15px 0 30px; }
