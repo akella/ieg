@@ -65,7 +65,7 @@ header, footer, nav, figure { display: block; }
 .nav .arr_down { margin-left: 4px; }
 
 .header-media { background: url(../img/bg-media.png); text-align: center; margin-bottom: 20px; }
-.header-media img { vertical-align: top; }
+.header-media img { vertical-align: top; height: auto !important; }
 @media only screen and (max-width: 960px) { .header-media img { width: 100%; } }
 
 .footer { background: #001060; color: #fff; padding: 25px 0 0; }
@@ -283,16 +283,15 @@ $break-large: 1180px;
 .team .team__name h3 { font-weight: normal; font-size: 15px; margin-left: 18px; }
 .team .team__social { float: right; }
 
-.linkedin { display: block; background: url('icons-s1565973380.png') 0 -374px no-repeat; width: 16px; height: 16px; }
+.linkedin { display: block; background: url('../img/icons-s1565973380.png') 0 -374px no-repeat; width: 16px; height: 16px; }
 
 .person__data { padding: 0 0 32px; }
 .person__data .h1_mark { margin: 17px 0 32px; }
 .person__data p { margin: 0 25px 10px; line-height: 1.4; }
 
 .person__info { padding: 0 0 5px; }
-.person__info h2 { text-transform: uppercase; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-bottom: 35px; }
-.person__info h2 span { border: 1px solid #ccc; border-width: 1px 1px 0 0; background: #fff; .
-			display: inline-block; position: relative; bottom: -1px; padding: 4px 0 7px 20px; width: 195px; }
+.person__info h2 { text-transform: uppercase; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-bottom: 32px; }
+.person__info h2 span { border: 1px solid #ccc; border-width: 1px 1px 0 0; background: #fff; display: inline-block; position: relative; bottom: -1px; padding: 4px 0 7px  25px; width: 190px; }
 @media only screen and (max-width: 320px) { .person__info h2 span { width: 155px; } }
 .person__info dl { width: 100%; display: inline-block; }
 .person__info dt { float: left; font-weight: bold; width: 25%; padding: 0 0 0 3.8%; margin: 0 0 33px; }
@@ -416,6 +415,6 @@ $break-large: 1180px;
 .search .search__result { border-bottom: 1px solid #ccc; padding-bottom: 15px; margin-bottom: 10px; }
 .search .search__result h3 { font-size: 13px; font-weight: bold; line-height: 16px; color: #001060; }
 .search .search__result h3 a { color: #000; }
-.search .search__result h3:before { content: ""; display: inline-block; background: url('icons-s1565973380.png') 0 -323px no-repeat; width: 18px; height: 16px; position: relative; top: 4px; }
+.search .search__result h3:before { content: ""; display: inline-block; background: url('../img/icons-s1565973380.png') 0 -323px no-repeat; width: 18px; height: 16px; position: relative; top: 4px; }
 .search .search__result p { margin: 0; }
 .search .search__result strong { color: #bbc23a; }

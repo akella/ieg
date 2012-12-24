@@ -257,7 +257,8 @@ header,footer,nav,figure{display: block;}
 	margin-bottom:20px; 
 	img{
 		vertical-align: top;
-			@include respond-to(step) {
+		height: auto !important;
+		@include respond-to(step) {
 			width: 100%;
 		}
 	}

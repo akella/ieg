@@ -95,9 +95,8 @@ $break-large: 1180px;
 .person__data p { margin: 0 25px 10px; line-height: 1.4; }
 
 .person__info { padding: 0 0 5px; }
-.person__info h2 { text-transform: uppercase; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-bottom: 35px; }
-.person__info h2 span { border: 1px solid #ccc; border-width: 1px 1px 0 0; background: #fff; .
-			display: inline-block; position: relative; bottom: -1px; padding: 4px 0 7px 20px; width: 195px; }
+.person__info h2 { text-transform: uppercase; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-bottom: 32px; }
+.person__info h2 span { border: 1px solid #ccc; border-width: 1px 1px 0 0; background: #fff; display: inline-block; position: relative; bottom: -1px; padding: 4px 0 7px  25px; width: 190px; }
 @media only screen and (max-width: 320px) { .person__info h2 span { width: 155px; } }
 .person__info dl { width: 100%; display: inline-block; }
 .person__info dt { float: left; font-weight: bold; width: 25%; padding: 0 0 0 3.8%; margin: 0 0 33px; }

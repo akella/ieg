@@ -65,7 +65,7 @@ header, footer, nav, figure { display: block; }
 .nav .arr_down { margin-left: 4px; }
 
 .header-media { background: url(../img/bg-media.png); text-align: center; margin-bottom: 20px; }
-.header-media img { vertical-align: top; }
+.header-media img { vertical-align: top; height: auto !important; }
 @media only screen and (max-width: 960px) { .header-media img { width: 100%; } }
 
 .footer { background: #001060; color: #fff; padding: 25px 0 0; }
