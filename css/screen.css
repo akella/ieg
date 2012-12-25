@@ -336,10 +336,9 @@ $break-large: 1180px;
 .press .press__title { font-size: 16px; color: #001060; margin-bottom: -1px; }
 .press p { margin-bottom: 18px; }
 
-/* Next */
 .employee { margin: 17px 0 44px; }
 .employee .employee__img { float: left; margin: 0 10px 12px 0; padding: 0; }
-.employee h1 { margin: 0 0 22px; }
+.employee .h1, .employee .h1_mark, .employee .h1_pers { margin: 0 0 22px; }
 .employee img { vertical-align: top; }
 .employee p { margin-top: 0; line-height: 1.3; }
 .employee .employee__post { clear: both; color: #424242; font-size: 13px; }
@@ -351,21 +350,21 @@ $break-large: 1180px;
 .contact-box .contact-box__info, .contact-box_wi .contact-box__info { margin-left: 140px; line-height: 1.3; }
 @media only screen and (max-width: 680px) { .contact-box .contact-box__img, .contact-box_wi .contact-box__img { float: none; margin-bottom: 12px; }
   .contact-box .contact-box__info, .contact-box_wi .contact-box__info { margin-left: 0; } }
-.contact-box h1, .contact-box_wi h1 { margin-top: 0; }
-.contact-box h2, .contact-box_wi h2, .contact-box h3, .contact-box_wi h3 { font-size: 14px; color: #333333; }
+.contact-box .h1, .contact-box_wi .h1, .contact-box .h1_mark, .contact-box_wi .h1_mark, .contact-box .h1_pers, .contact-box_wi .h1_pers { margin-top: 0; }
+.contact-box h2, .contact-box_wi h2, .contact-box .contact-box__subtitle, .contact-box_wi .contact-box__subtitle { font-size: 14px; color: #333333; }
 .contact-box span, .contact-box_wi span { display: block; }
 .contact-box p, .contact-box_wi p { margin: 0 0 17px; }
 
 .contact-box_wi { margin: 5px 0 35px; }
 .contact-box_wi .contact-box__info { margin-left: 21px; width: auto; }
 
-.contact-box h1, .contact-box_wi h1, .contact-box_wi h1 { margin-top: 0; }
+.contact-box .h1, .contact-box_wi .h1, .contact-box .h1_mark, .contact-box_wi .h1_mark, .contact-box .h1_pers, .contact-box_wi .h1_pers, .contact-box_wi .h1, .contact-box_wi .h1_mark, .contact-box_wi .h1_pers { margin-top: 0; }
 
 .event { margin: 0 0 40px; }
 .event .h1, .event .h1_mark, .event .h1_pers { margin: 15px 0 30px; }
 .event .event__item { margin: 0 0 20px; }
 .event em { font-size: 12px; color: #424242; font-style: normal; }
-.event h2 { font-size: 16px; color: #001060; margin: 0 0 -2px; }
+.event .event__title { font-size: 16px; color: #001060; margin: 0 0 -2px; }
 
 .tab-menu { text-align: right; margin: -9px 0 -17px; }
 .tab-menu li { list-style: none; display: inline-block; font-size: 13px; border-left: 1px solid #999; padding: 0 6px 0 9px; line-height: 1; }
@@ -380,7 +379,7 @@ $break-large: 1180px;
 .btn_gray { background: #e0e0e0; color: #001060; width: 140px; height: 26px; line-height: 26px; text-align: center; margin-bottom: 13px; font-weight: bold; cursor: pointer; }
 
 .contact-form { display: none; }
-.contact-form h1 { margin-bottom: 25px; }
+.contact-form .h1, .contact-form .h1_mark, .contact-form .h1_pers { margin-bottom: 25px; }
 .contact-form .row { display: inline-block; width: 100%; margin-bottom: 15px; }
 .contact-form .input { color: #000; font-family: Tahoma, sans-serif; font-size: 12px; height: 23px; width: 425px; padding: 0 5px; }
 @media only screen and (max-width: 960px) { .contact-form .input { width: 70%; padding: 0 1%; } }

@@ -523,7 +523,6 @@
 	}
 }
 
-/* Next */
 .employee{
 	margin: 17px 0 44px;
 	.employee__img{
@@ -531,9 +530,7 @@
 		margin:0 10px 12px 0;
 		padding:0;
 	}
-	h1{
-		margin:0 0 22px; 
-	}
+	.h1{margin:0 0 22px; }
 	img{vertical-align: top;}
 	p{
 		margin-top: 0;
@@ -554,7 +551,6 @@
 		}
 	}
 }
-
 
 .contact-box{
 	width: 100%;
@@ -577,8 +573,8 @@
 			}
 		.contact-box__info{margin-left: 0;}
 	}
-	h1{margin-top: 0;}
-	h2, h3{
+	.h1{margin-top: 0;}
+	h2, .contact-box__subtitle{
 		font-size: 14px;
 		color:#333333;
 	}
@@ -594,10 +590,7 @@
 		}
 
 }
-
-.contact-box h1, .contact-box_wi h1 {
-    margin-top: 0;
-}
+.contact-box .h1, .contact-box_wi .h1 {margin-top: 0;}
 
 .event{
 	margin:0 0 40px; 
@@ -608,7 +601,7 @@
 		color: #424242;
 		font-style: normal;
 	}
-	h2{
+	.event__title{
 		font-size: 16px;
 		color: $blue;
 		margin:0 0 -2px; 
@@ -660,7 +653,7 @@
 
 .contact-form{
 	display:none;
-	h1{margin-bottom: 25px;}
+	.h1{margin-bottom: 25px;}
 	.row{
 		display: inline-block;
 		width: 100%;
